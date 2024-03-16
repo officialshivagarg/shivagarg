@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiva's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: rgb(251, 243, 243);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 68px;
+            background-color: rgb(16, 28, 47);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: aquamarine;
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(153, 153, 226);
+            height: 1.2px;
+
+            margin: 40px 84px;
+        }
+
+
+        .left {
+            font-size: 1.8rem;
+            font-style: italic;
+            background-color: #2d2d2d;
+            border-radius: 8px;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+
+
+        }
+
+        .firstsection>div {
+            width: 31%;
+        }
+
+        .leftsection {
+            font-size: 2.6rem;
+            margin: 30px 0;
+
+        }
+
+        .btn {
+            padding: 5px;
+            background: #0b0798;
+            color: white;
+            border: 2px solid white;
+            border-radius: 7px;
+            font-size: 18px;
+            cursor: pointer
+        }
+
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .buttons {
+            padding: 6px 1px;
+
+        }
+
+        .rigthsection img {
+
+            width: 86%;
+
+        }
+
+        .purple {
+            color: rgb(178, 120, 232);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(178, 120, 232);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vartical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 8vw;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -23px;
+            left: -9px;
+        }
+
+        .vartical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .virtical-desc {
+            position: relative;
+            top: 84px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #201f34;
+
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 39px 136px;
+            justify-content: space-evenly;
+            /* padding: 0px -2px; */
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: #d19898;
+            padding: 13px 0;
+
+        }
+
+        .footer-first {
+            margin: 28px -70px 0px 0px;
+            color: #e6aa1a;
+            font-style: italic;
+            font-size: 1.7rem;
+        }
+
+        /* .navar img {
+
+            width: 131px;
+            margin: 0px 0px 175px -155px;
+
+        } */
+
+
+        @media screen and (max-width: 898px) {
+
+            .box {
+                flex-direction: column;
+
+
+            }
+
+            .footer {
+                padding: 0px -2px;
+            }
+
+            .secondsection .vartical {
+                height: unset;
+
+
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+
+            }
+
+            .vartical-title,
+            .virtical-desc {
+                left: 15px;
+            }
+
+            .secondsection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 105vh;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .leftsection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.6rem;
+            }
+
+            .rigthsection {
+                width: 315px !important;
+            }
+
+            .footer {
+
+                padding: 0 2px;
+
+            }
+
+            nav ul li {
+                list-style: none;
+                margin: 0 13px;
+            }
+
+            .footer-first {
+                margin: 38px 13px 0px 0px;
+                font-size: 1.2rem;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shiva's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="http://192.168.236.82:5500/index%20(2).html">Home</a></li>
+                    <li><a href="https://www.linkedin.com/in/shiva-shukla-2a1885272/">linkedin</a></li>
+                    <li><a href="https://instagram.com/officialshivagarg/">Instagram</a></li>
+                    <li><a href="https://github.com/officialshivagarg?tab=projects">projects</a></li>
+                    <!-- <li><a href="/">Contact Me</a></li> -->
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div>Hi,My Self <span class="purple">Shivagarg</span></div>
+                <div>and I am a passionate </div>
+
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a
+                            href="https://drive.google.com/file/d/182lIsDn6OGfGOv1KoKzLm0hQjbKp7CSL/view?usp=sharing">Downlode
+                            Resume</a></button>
+                    <button class="btn"> <a href="https://github.com/officialshivagarg">Visit Github</a></button>
+                </div>
+            </div>
+            </div>
+            <div class="rigthsection">
+                <img src="ssss.png" alt="">
+
+            </div>
+            <!-- <div class="navar"><img src="naver.png" alt=""></div> -->
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vartical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vartical-title">
+                        HTML Developer (2020-2021)
+
+                    </div>
+                    <div class="virtical-desc">
+                        I have been an HTML developer and journey, I have created and am creating
+                        content for many websites. I know HTML from beginner to advanced level and want to move forward
+                        in this journey.
+                    </div>
+                </div>
+                <div class="vartical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vartical-title">
+                        Video Editor (2021-2022)
+
+                    </div>
+                    <div class="virtical-desc">
+                        I am expert in HTML as well as video editing and i hava done and am doing proper video editing
+                        for 1 year. I have delivered many freelancing projects by doing video editing.
+                    </div>
+                </div>
+                <div class="vartical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vartical-title">
+                        Softwear Developer (2021-2023)
+
+                    </div>
+                    <div class="virtical-desc">
+                        I have created Softwear for many colleges and institutes. I have worked under a freelancer and
+                        we have a lot of intrest in making Softwear.
+                    </div>
+                </div>
+                <div class="vartical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vartical-title">
+                        Node js Developer (2022-2023)
+
+                    </div>
+                    <div class="virtical-desc">
+                        I have done a lot of work on Note js in my career and I can test it very naively and till now I
+                        have been doing it and have developed many beckend on Node js.
+                    </div>
+                </div>
+                <div class="vartical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vartical-title">
+                        Motivational Speaker (2020-2023)
+
+                    </div>
+                    <div class="virtical-desc">
+                        Along with all this I am also Motivational speaker and i have visited many schools and motivated
+                        many children throught Motivational speakeing and i have got a good feedback.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="footer-first">
+                    Shiva's Portfolio
+
+                </div>
+                <div class="footer-Second">
+                    <ul>
+                        <li>Terms of Services</li>
+                        <li>General Terms and Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookie Policy</li>
+                        <li>Imprint</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="footer-rights">
+                Copyright &#169; 2020-2024 www.shivagargportfolio.com | All rights reserved
+            </div>
+        </footer>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Life Coach', 'Web Designer', 'Softwear Developer', 'Video Editor', 'Motivational speaker'],
+            typeSpeed: 50,
+        });
+
+    </script>
+</body>
+
+</html>
+
+
+
